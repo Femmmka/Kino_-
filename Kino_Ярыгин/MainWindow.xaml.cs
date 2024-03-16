@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Kino_Ярыгин.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,8 @@ namespace Kino_Ярыгин
         public MainWindow()
         {
             InitializeComponent();
+
+            new KinoteatrContext(0, "test", 12, 12).Add();
         }
     }
 }
